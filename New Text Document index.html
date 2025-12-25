@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EPPIS  | Aesthetic Shopping</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0d0d0d;
+  color:#43ddf8;
+}
+
+/* Navbar */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:#111;
+  box-shadow:0 2px 10px rgba(255,255,255,0.1);
+}
+
+header h1{
+  letter-spacing:4px;
+  color:#59c6f1;
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#bbb;
+}
+
+nav a:hover{
+  color:#49c6ec;
+}
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:90px 20px;
+  background:linear-gradient(to right,#34aad8,#222);
+}
+
+.hero h2{
+  font-size:38px;
+}
+
+.hero p{
+  margin:15px 0;
+  font-size:18px;
+  color:#61d1f3;
+}
+
+.hero button{
+  padding:12px 35px;
+  background:#fff;
+  color:#000;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+  border-radius:30px;
+}
+
+/* Products */
+.products{
+  padding:60px 30px;
+  text-align:center;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.product{
+  background:#151515;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 8px 25px rgba(76, 232, 243, 0.8);
+  transition:transform 0.3s;
+}
+
+.product:hover{
+  transform:translateY(-8px);
+}
+
+.product img{
+  width:100%;
+  border-radius:12px;
+}
+
+.product h3{
+  margin:12px 0 5px;
+}
+
+.product p{
+  color:#ccc;
+}
+
+.product button{
+  margin-top:12px;
+  padding:8px 22px;
+  background:#fff;
+  color:#2ec6f5;
+  border:none;
+  cursor:pointer;
+  border-radius:20px;
+}
+
+/* Footer */
+footer{
+  background:#000;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>EEPIS</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Cart 🛒</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Luxury • Fashion • Lifestyle</h2>
+  <p>Experience premium aesthetic shopping</p>
+  <button>Explore Now</button>
+</section>
+
+<section class="products">
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="https://picsum.photos/300?dress">
+      <h3>Fashion Dress</h3>
+      <p>₹1,499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://picsum.photos/300?watch">
+      <h3>Luxury Watch</h3>
+      <p>₹4,999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://picsum.photos/300?shoes">
+      <h3>Stylish Shoes</h3>
+      <p>₹2,199</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://picsum.photos/300?car">
+      <h3>Sports Car</h3>
+      <p>₹25,00,000</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://picsum.photos/300?bike">
+      <h3>Racing Bike</h3>
+      <p>₹1,80,000</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://picsum.photos/300?lamp">
+      <h3>Aesthetic Lamp</h3>
+      <p>₹999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 EEPIS | Dark Aesthetic Store 🖤</p>
+</footer>
+
+<script>
+function addToCart(){
+  alert("Added to cart successfully 🛒");
+}
+</script>
+
+</body>
+</html>
